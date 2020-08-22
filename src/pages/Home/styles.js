@@ -7,6 +7,7 @@ export const ProductList = styled.div`
 
   .container {
     position: relative;
+    list-style-type: none;
 
     .card {
       position: relative;

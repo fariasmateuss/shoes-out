@@ -5,21 +5,21 @@ import { ProductList } from './styles';
 function Home() {
   return (
     <ProductList>
-      <div class="container">
-        <div class="card">
-          <div class="imgBx">
+      <li className="container">
+        <div className="card">
+          <div className="imgBx">
             <img src="https://i.ibb.co/10hBqpX/vans.png" alt="Vans" />
           </div>
-          <div class="contentBx">
+          <div className="contentBx">
             <h2>Vans Shoe</h2>
-            <div class="size">
+            <div className="size">
               <h3>Size :</h3>
               <span>37</span>
               <span>38</span>
               <span>39</span>
               <span>40</span>
             </div>
-            <div class="color">
+            <div className="color">
               <h3>Color :</h3>
               <span></span>
               <span></span>
@@ -28,7 +28,7 @@ function Home() {
             <a href="#">Buy Now</a>
           </div>
         </div>
-      </div>
+      </li>
     </ProductList>
   );
 }
