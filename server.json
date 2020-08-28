@@ -1,0 +1,65 @@
+{
+  "stock": [
+    {
+      "id": 1,
+      "amount": 3
+    },
+    {
+      "id": 2,
+      "amount": 5
+    },
+    {
+      "id": 3,
+      "amount": 2
+    },
+    {
+      "id": 4,
+      "amount": 1
+    },
+    {
+      "id": 5,
+      "amount": 5
+    },
+    {
+      "id": 6,
+      "amount": 10
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "title": "Vans Classic",
+      "price": 110.9,
+      "color": "#eab15b",
+      "image": "https://i.ibb.co/10hBqpX/vans.png"
+    },
+    {
+      "id": 2,
+      "title": "Yezzy Boost",
+      "price": 330.9,
+      "color": "#b6b3bc",
+      "image": "https://i.ibb.co/1sTKVw8/Yeezy-Boost-350-V2-Tail-Light-removebg-preview.png"
+    },
+    {
+      "id": 4,
+      "title": "Jordan Boost",
+      "price": 160.9,
+      "color": "#ce3833",
+      "image": "https://i.ibb.co/nckwP86/nike-jordan-model-1.png"
+    },
+    {
+      "id": 5,
+      "title": "Adidas Yung",
+      "price": 199.9,
+      "color": "#b7ae8f",
+      "image": "https://i.ibb.co/880s63M/adidas-YUNG.png"
+    },
+    {
+      "id": 6,
+      "title": "Adidas Runner",
+      "price": 220.9,
+      "color": "#c83a4b",
+      "image": "https://i.ibb.co/Jz6cvnw/nike-new-era.png"
+    }
+  ]
+}
