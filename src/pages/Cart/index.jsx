@@ -14,8 +14,8 @@ function Cart() {
       <ProductTable>
         <thead>
           <tr />
-          <th>Produto</th>
-          <th>Quantidade</th>
+          <th>Product</th>
+          <th>Amount</th>
           <th>Subtotal</th>
           <tr />
         </thead>
@@ -27,7 +27,7 @@ function Cart() {
 
             <td>
               <strong>Shoe Vans Classic</strong>
-              <span>R$ 129,90</span>
+              <span>$ 129,90</span>
             </td>
 
             <td>
@@ -43,7 +43,7 @@ function Cart() {
             </td>
 
             <td>
-              <strong>R$ 389,70</strong>
+              <strong>$ 389,70</strong>
             </td>
 
             <td>
@@ -56,11 +56,11 @@ function Cart() {
       </ProductTable>
 
       <footer>
-        <button type="button">Finalizar pedido</button>
+        <button type="button">Check Out</button>
 
         <Total>
           <span>Total</span>
-          <strong>R$ 389,70</strong>
+          <strong>$ 389,70</strong>
         </Total>
       </footer>
     </Container>
