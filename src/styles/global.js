@@ -10,6 +10,10 @@ export default createGlobalStyle`
   text-decoration: none;
 }
 
+a {
+  cursor: pointer;
+}
+
 body {
   background: #131313;
   -webkit-font-smoothing: antialised;
