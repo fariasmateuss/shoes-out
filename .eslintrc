@@ -26,6 +26,8 @@
       "warn",
       { "extionsions": [".jsx", ".js"] }
     ],
-    "import/prefer-default-export": "off"
+    "import/prefer-default-export": "off",
+    "no-unused-vars": "off",
+    "no-console": ["error", { "allow": ["tron"] }]
   }
 }
