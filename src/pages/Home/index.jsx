@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
 import { ProductList } from './styles';
 import { formatPrice } from '../../util/format';
@@ -19,6 +20,15 @@ class Home extends Component {
 
     this.setState({ products: data });
   }
+
+  handleAddProduct = product => {
+    const { dispatch } = this.props;
+
+    dispatch({
+      type: 'ADD_TO_CART',
+      product,
+    });
+  };
 
   render() {
     const { products } = this.state;
@@ -50,7 +60,12 @@ class Home extends Component {
                   <h3>Price :</h3>
                   <span>{product.priceFormatted}</span>
                 </div>
-                <button type="button">Buy Now</button>
+                <button
+                  type="button"
+                  onClick={() => this.handleAddProduct(product)}
+                >
+                  Buy Now
+                </button>
               </div>
             </div>
           </li>
@@ -60,4 +75,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default connect()(Home);

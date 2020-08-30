@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
 
 import { Container, Cart } from './styles';
 
 import { MdShoppingCart } from 'react-icons/md';
 
-function Header() {
+function Header({ cartSize }) {
   return (
     <Container>
       <Link to="/">
@@ -15,12 +16,13 @@ function Header() {
       <Cart to="/cart">
         <div>
           <strong>Meu carrinho</strong>
-          <span>4 itens</span>
+          <span>{cartSize} itens</span>
         </div>
         <MdShoppingCart size={36} />
       </Cart>
     </Container>
   );
 }
-
-export default Header;
+export default connect(state => ({
+  cartSize: state.cart.length,
+}))(Header);
