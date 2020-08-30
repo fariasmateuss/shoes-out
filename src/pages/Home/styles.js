@@ -37,7 +37,7 @@ export const ProductList = styled.div`
         content: 'Vans';
         position: absolute;
         top: 30%;
-        left: -30px;
+        left: -20px;
         font-size: 9em;
         font-weight: 800;
         font-style: italic;
@@ -68,7 +68,7 @@ export const ProductList = styled.div`
       }
 
       &:hover .contentBx {
-        height: 210px;
+        height: 250px;
       }
 
       .contentBx {
@@ -89,7 +89,8 @@ export const ProductList = styled.div`
         }
 
         .size,
-        .color {
+        .color,
+        .price {
           display: flex;
           justify-content: center;
           align-items: center;
@@ -122,16 +123,12 @@ export const ProductList = styled.div`
           color: #111;
           border-radius: 4px;
           cursor: pointer;
-
-          &:hover {
-            background: #eab15b;
-          }
         }
 
         .color span {
           width: 20px;
           height: 20px;
-          background: #ff0;
+          background: #eee;
           border-radius: 50%;
           margin: 0 5px;
           cursor: pointer;
@@ -149,11 +146,12 @@ export const ProductList = styled.div`
           }
         }
 
-        a {
+        button {
           display: inline-block;
           padding: 10px 20px;
           background: #fff;
           border-radius: 4px;
+          border-style: none;
           margin-top: 10px;
           text-decoration: none;
           font-weight: 600;
@@ -165,13 +163,14 @@ export const ProductList = styled.div`
       }
 
       &:hover .contentBx .size,
-      &:hover .contentBx .color {
+      &:hover .contentBx .color,
+      &:hover .contentBx .price {
         opacity: 1;
         visibility: visible;
         transition-delay: 0.6s;
       }
 
-      &:hover .contentBx a {
+      &:hover .contentBx button {
         opacity: 1;
         transform: translateY(0px);
         transition-delay: 0.75s;
