@@ -37,21 +37,21 @@
       "id": 2,
       "title": "Yezzy Boost",
       "price": 330.9,
-      "color": "#b6b3bc",
+      "color": "#b1aeb7",
       "image": "https://i.ibb.co/1sTKVw8/Yeezy-Boost-350-V2-Tail-Light-removebg-preview.png"
     },
     {
       "id": 3,
       "title": "Yezzy Boost",
       "price": 330.9,
-      "color": "#ff0000",
+      "color": "#cd393c",
       "image": "https://i.ibb.co/hYHN48t/shoe5-removebg-preview.png"
     },
     {
       "id": 4,
       "title": "Jordan Boost",
       "price": 160.9,
-      "color": "#ce3833",
+      "color": "#cf5459",
       "image": "https://i.ibb.co/nckwP86/nike-jordan-model-1.png"
     },
     {
@@ -65,7 +65,7 @@
       "id": 6,
       "title": "Adidas Runner",
       "price": 220.9,
-      "color": "#c83a4b",
+      "color": "#d6d6d8",
       "image": "https://i.ibb.co/Jz6cvnw/nike-new-era.png"
     }
   ]
