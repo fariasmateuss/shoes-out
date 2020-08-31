@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import { ProductList } from './styles';
+import { ProductList, ProductCard } from './styles';
 import { formatPrice } from '../../util/format';
 import api from '../../services/api';
 
@@ -36,7 +36,11 @@ class Home extends Component {
     return (
       <ProductList>
         {products.map(product => (
-          <li key={product.id} className="container">
+          <ProductCard
+            key={product.id}
+            className="container"
+            bgCircle={product.color}
+          >
             <div className="card">
               <div className="imgBx">
                 <img src={product.image} alt={product.title} />
@@ -68,7 +72,7 @@ class Home extends Component {
                 </button>
               </div>
             </div>
-          </li>
+          </ProductCard>
         ))}
       </ProductList>
     );
