@@ -29,6 +29,7 @@
     "import/prefer-default-export": "off",
     "no-unused-vars": "off",
     "no-console": ["error", { "allow": ["tron"] }],
-    "no-param-reassing": "off"
+    "no-param-reassing": "off",
+    "class-methods-use-this": "off"
   }
 }
