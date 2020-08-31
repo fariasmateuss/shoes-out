@@ -28,6 +28,7 @@
     ],
     "import/prefer-default-export": "off",
     "no-unused-vars": "off",
-    "no-console": ["error", { "allow": ["tron"] }]
+    "no-console": ["error", { "allow": ["tron"] }],
+    "no-param-reassing": "off"
   }
 }
