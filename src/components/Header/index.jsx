@@ -15,8 +15,8 @@ function Header({ cartSize }) {
 
       <Cart to="/cart">
         <div>
-          <strong>Meu carrinho</strong>
-          <span>{cartSize} itens</span>
+          <strong>Cart</strong>
+          <span>{cartSize} Items</span>
         </div>
         <MdShoppingCart size={36} />
       </Cart>
