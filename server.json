@@ -28,45 +28,45 @@
   "products": [
     {
       "id": 1,
-      "title": "Vans Classic",
-      "price": 110.9,
-      "color": "#eab15b",
-      "image": "https://i.ibb.co/10hBqpX/vans.png"
+      "title": "Zoom Fly 3 Premium",
+      "price": 160,
+      "color": "#54d4c9",
+      "image": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1315882/zoom-fly-3-premium-mens-running-shoe-XhzpPH-removebg-preview.png"
     },
     {
       "id": 2,
-      "title": "Yezzy Boost",
-      "price": 330.9,
-      "color": "#b1aeb7",
-      "image": "https://i.ibb.co/1sTKVw8/Yeezy-Boost-350-V2-Tail-Light-removebg-preview.png"
+      "title": "Epic React Flyknit 2",
+      "price": 89.97,
+      "color": "#fd584a",
+      "image": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1315882/epic-react-flyknit-2-mens-running-shoe-2S0Cn1-removebg-preview.png"
     },
     {
       "id": 3,
-      "title": "Yezzy Boost",
-      "price": 330.9,
-      "color": "#cd393c",
-      "image": "https://i.ibb.co/hYHN48t/shoe5-removebg-preview.png"
+      "title": "Odyssey React Flyknit 2",
+      "price": 71.97,
+      "color": "#d4d7d6",
+      "image": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1315882/odyssey-react-flyknit-2-mens-running-shoe-T3VG7N-removebg-preview.png"
     },
     {
       "id": 4,
-      "title": "Jordan Boost",
-      "price": 160.9,
-      "color": "#cf5459",
-      "image": "https://i.ibb.co/nckwP86/nike-jordan-model-1.png"
+      "title": "Air Zoom Pegasus 36 Shield",
+      "price": 89.97,
+      "color": "#4d317f",
+      "image": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1315882/air-zoom-pegasus-36-shield-mens-running-shoe-24FBGb__1_-removebg-preview.png"
     },
     {
       "id": 5,
-      "title": "Adidas Yung",
-      "price": 199.9,
-      "color": "#b7ae8f",
-      "image": "https://i.ibb.co/880s63M/adidas-YUNG.png"
+      "title": "Vaporfly 4% Flyknit",
+      "price": 187.97,
+      "color": "#3569a1",
+      "image": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1315882/vaporfly-4-flyknit-running-shoe-v7G3FB-removebg-preview.png"
     },
     {
       "id": 6,
-      "title": "Adidas Runner",
-      "price": 220.9,
-      "color": "#d6d6d8",
-      "image": "https://i.ibb.co/Jz6cvnw/nike-new-era.png"
+      "title": "CruzrOne",
+      "price": 100.97,
+      "color": "#e8d026",
+      "image": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1315882/cruzrone-unisex-shoe-T2rRwS-removebg-preview.png"
     }
   ]
 }
