@@ -15,7 +15,6 @@ export const Container = styled.div`
 
     button {
       background: #131313;
-      color: #fff;
       border: 0;
       border-radius: 4px;
       padding: 12px 20px;

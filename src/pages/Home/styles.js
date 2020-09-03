@@ -35,13 +35,13 @@ export const ProductCard = styled.li`
     }
 
     &:after {
-      content: 'Vans';
+      content: 'Nike';
       position: absolute;
       top: 30%;
-      left: -20px;
-      font-size: 9em;
+      font-size: 10em;
       font-weight: 800;
       font-style: italic;
+      text-transform: uppercase;
       color: rgba(255, 255, 255, 0.04);
     }
 
@@ -86,7 +86,6 @@ export const ProductCard = styled.li`
         font-weight: 600;
         letter-spacing: 1px;
         padding-top: 30px;
-        color: #fff;
       }
 
       .size,
@@ -101,7 +100,6 @@ export const ProductCard = styled.li`
         visibility: hidden;
 
         h3 {
-          color: #fff;
           font-weight: 300;
           font-size: 14px;
           text-transform: uppercase;
@@ -117,7 +115,6 @@ export const ProductCard = styled.li`
         line-height: 26px;
         font-size: 14px;
         display: inline-block;
-        color: #111;
         background: #fff;
         margin: 0 5px;
         transition: 0.5s;
@@ -133,10 +130,6 @@ export const ProductCard = styled.li`
         border-radius: 50%;
         margin: 0 5px;
         cursor: pointer;
-
-        &:nth-child(1) {
-          background: #eab15b;
-        }
 
         &:nth-child(2) {
           background: #eab15b;
