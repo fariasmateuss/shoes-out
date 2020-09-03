@@ -14,11 +14,12 @@ function Header({ cartSize }) {
       </Link>
 
       <Cart to="/cart">
-        <div>
+        <div className="content">
           <strong>Cart</strong>
-          <span>{cartSize} Items</span>
+          <span>Items</span>
         </div>
         <MdShoppingCart size={36} />
+        <div className="badge">{cartSize}</div>
       </Cart>
     </Container>
   );

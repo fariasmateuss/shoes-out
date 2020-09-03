@@ -15,13 +15,24 @@ export const Cart = styled(Link)`
   text-decoration: none;
   transition: opacity 0.2s;
 
-  div {
+  .content {
     text-align: right;
     margin-right: 10px;
 
     strong {
       display: block;
-      color: #fff;
     }
+  }
+
+  .badge {
+    position: relative;
+    padding: 3px 7px;
+    right: 5px;
+    top: -15px;
+    display: inline-block;
+    background-color: #f44336;
+    border-radius: 50px;
+    font-size: 11px;
+    font-weight: 700;
   }
 `;
