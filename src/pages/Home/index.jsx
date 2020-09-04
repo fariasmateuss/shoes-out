@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { formatPrice } from '../../util/format';
+import { MdAddShoppingCart } from 'react-icons/md';
 import * as CartActions from '../../store/modules/cart/actions';
 
 import api from '../../services/api';
 
-import { ProductList, ProductCard } from './styles';
+import { ProductList, ProductCard, CartAmount } from './styles';
 
 class Home extends Component {
   state = {
@@ -32,6 +33,7 @@ class Home extends Component {
 
   render() {
     const { products } = this.state;
+    const { amount } = this.props;
 
     return (
       <ProductList>
@@ -68,6 +70,14 @@ class Home extends Component {
                   type="button"
                   onClick={() => this.handleAddProduct(product)}
                 >
+                  {amount[product.id] || 0 ? (
+                    <CartAmount>
+                      <MdAddShoppingCart size={1} />
+                      {amount[product.id]}
+                    </CartAmount>
+                  ) : (
+                    <CartAmount hidden></CartAmount>
+                  )}
                   Buy Now
                 </button>
               </div>
@@ -79,6 +89,14 @@ class Home extends Component {
   }
 }
 
+const mapStateToProps = state => ({
+  amount: state.cart.reduce((amount, product) => {
+    amount[product.id] = product.amount;
+
+    return amount;
+  }, {}),
+});
+
 const mapDispatchProps = dispatch => bindActionCreators(CartActions, dispatch);
 
-export default connect(null, mapDispatchProps)(Home);
+export default connect(mapStateToProps, mapDispatchProps)(Home);

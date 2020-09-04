@@ -171,3 +171,15 @@ export const ProductCard = styled.li`
     }
   }
 `;
+
+export const CartAmount = styled.div`
+  display: ${props => (props.hidden ? 'none' : 'inline-block')};
+  position: absolute;
+  padding: 3px 7px;
+  left: -10px;
+  top: -10px;
+  background-color: #f44336;
+  border-radius: 50px;
+  font-size: 10px;
+  font-weight: 700;
+`;
