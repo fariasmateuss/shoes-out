@@ -19,7 +19,7 @@
     "ecmaVersion": 11,
     "sourceType": "module"
   },
-  "plugins": ["react", "standard", "babel"],
+  "plugins": ["react", "standard", "babel", "react-hooks"],
   "rules": {
     "prettier/prettier": "error",
     "react/jsx-filename-extension": [
@@ -30,6 +30,8 @@
     "no-unused-vars": "off",
     "no-console": ["error", { "allow": ["tron"] }],
     "no-param-reassing": "off",
-    "class-methods-use-this": "off"
+    "class-methods-use-this": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
   }
 }
