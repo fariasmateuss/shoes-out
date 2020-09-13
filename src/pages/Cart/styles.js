@@ -36,11 +36,22 @@ export const ProductTable = styled.table`
     color: #999;
     text-align: left;
     padding: 12px;
+
+    @media (max-width: 550px) {
+      display: none;
+    }
   }
 
   tbody td {
     padding: 12px;
     border-bottom: 1px;
+
+    @media (max-width: 550px) {
+      &:nth-child(3),
+      &:nth-child(4) {
+        display: none;
+      }
+    }
   }
 
   img {
