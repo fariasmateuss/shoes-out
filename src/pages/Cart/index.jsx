@@ -1,15 +1,14 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { formatPrice } from '../../util/format';
+import * as CartActions from '../../store/modules/cart/actions';
+import { Container, ProductTable, Total } from './styles';
+import Header from '../../components/Header';
 import {
   MdRemoveCircleOutline,
   MdAddCircleOutline,
   MdDelete,
 } from 'react-icons/md';
-
-import * as CartActions from '../../store/modules/cart/actions';
-
-import { Container, ProductTable, Total } from './styles';
 
 function Cart() {
   const total = useSelector(state =>
@@ -38,67 +37,70 @@ function Cart() {
   }
 
   return (
-    <Container>
-      <ProductTable>
-        <thead>
-          <tr />
-          <th>Product</th>
-          <th>Amount</th>
-          <th>Subtotal</th>
-          <tr />
-        </thead>
-        <tbody>
-          {cart.map(product => (
-            <tr>
-              <td>
-                <img src={product.image} alt={product.title} />
-              </td>
+    <>
+      <Header />
+      <Container>
+        <ProductTable>
+          <thead>
+            <tr />
+            <th>Product</th>
+            <th>Amount</th>
+            <th>Subtotal</th>
+            <tr />
+          </thead>
+          <tbody>
+            {cart.map(product => (
+              <tr>
+                <td>
+                  <img src={product.image} alt={product.title} />
+                </td>
 
-              <td>
-                <strong>{product.title}</strong>
-                <span>{product.priceFormatted}</span>
-              </td>
+                <td>
+                  <strong>{product.title}</strong>
+                  <span>{product.priceFormatted}</span>
+                </td>
 
-              <td>
-                <div>
-                  <button type="button" onClick={() => decrement(product)}>
-                    <MdRemoveCircleOutline size={20} color="#fff" />
+                <td>
+                  <div>
+                    <button type="button" onClick={() => decrement(product)}>
+                      <MdRemoveCircleOutline size={20} color="#fff" />
+                    </button>
+                    <input type="number" readOnly value={product.amount} />
+                    <button type="button" onClick={() => increment(product)}>
+                      <MdAddCircleOutline size={20} color="#fff" />
+                    </button>
+                  </div>
+                </td>
+
+                <td>
+                  <strong>{product.subtotal}</strong>
+                </td>
+
+                <td>
+                  <button
+                    type="button"
+                    onClick={() =>
+                      dispatch(CartActions.removeFromCart(product.id))
+                    }
+                  >
+                    <MdDelete size={20} color="#fff" />
                   </button>
-                  <input type="number" readOnly value={product.amount} />
-                  <button type="button" onClick={() => increment(product)}>
-                    <MdAddCircleOutline size={20} color="#fff" />
-                  </button>
-                </div>
-              </td>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </ProductTable>
 
-              <td>
-                <strong>{product.subtotal}</strong>
-              </td>
+        <footer>
+          <button type="button">Check Out</button>
 
-              <td>
-                <button
-                  type="button"
-                  onClick={() =>
-                    dispatch(CartActions.removeFromCart(product.id))
-                  }
-                >
-                  <MdDelete size={20} color="#fff" />
-                </button>
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </ProductTable>
-
-      <footer>
-        <button type="button">Check Out</button>
-
-        <Total>
-          <span>Total</span>
-          <strong>{total}</strong>
-        </Total>
-      </footer>
-    </Container>
+          <Total>
+            <span>Total</span>
+            <strong>{total}</strong>
+          </Total>
+        </footer>
+      </Container>
+    </>
   );
 }
 
