@@ -18,7 +18,7 @@ function* addToCart({ id }) {
   const amount = currentAmount + 1;
 
   if (amount > stockAmount) {
-    toast.error('Stock limit reached');
+    toast.warn('Stock limit reached');
     return;
   }
 
@@ -44,7 +44,7 @@ function* updateAmount({ id, amount }) {
   const stockAmount = stock.data.amount;
 
   if (amount > stockAmount) {
-    toast.error('Stock limit reached');
+    toast.warn('Stock limit reached');
     return;
   }
 
