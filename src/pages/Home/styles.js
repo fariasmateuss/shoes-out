@@ -4,6 +4,15 @@ export const ProductList = styled.ul`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
+  justify-items: center;
+
+  @media (max-width: 1040px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 715px) {
+    grid-template-columns: auto;
+  }
 `;
 
 export const ProductCard = styled.li`
