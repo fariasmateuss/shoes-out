@@ -2,6 +2,8 @@ import { createGlobalStyle } from 'styled-components';
 
 import 'react-toastify/dist/ReactToastify.css';
 
+import backgroundImage from '../assets/background.svg';
+
 export default createGlobalStyle`
 * {
   color: #fff;
@@ -17,7 +19,7 @@ a {
 }
 
 body {
-  background: #131313;
+  background: #131313 url(${backgroundImage}) no-repeat center top;
   -webkit-font-smoothing: antialised;
 }
 
