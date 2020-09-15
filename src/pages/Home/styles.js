@@ -48,7 +48,7 @@ export const ProductCard = styled.li`
       position: absolute;
       top: 30%;
       font-size: 10em;
-      font-weight: 800;
+      font-weight: 900;
       font-style: italic;
       text-transform: uppercase;
       color: rgba(255, 255, 255, 0.04);
