@@ -24,7 +24,7 @@ body {
 }
 
 body, input, button {
-  font: 14px 'Poppins', sans-serif;;
+  font: 14px 'Poppins', sans-serif;
 }
 
 #root {
