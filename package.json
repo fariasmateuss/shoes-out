@@ -25,6 +25,7 @@
     "styled-components": "^5.1.1"
   },
   "scripts": {
+    "dev": "yarn json-server server.json  -p 3333 -w",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
