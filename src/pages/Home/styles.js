@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import { darken } from 'polished';
+
 export const ProductList = styled.ul`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -139,6 +141,11 @@ export const ProductCard = styled.li`
         border-radius: 50%;
         margin: 0 5px;
         cursor: pointer;
+
+        &:hover {
+          width: 21px;
+          height: 21px;
+        }
 
         &:nth-child(2) {
           background: #eab15b;
