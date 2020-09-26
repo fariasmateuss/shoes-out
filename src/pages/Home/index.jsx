@@ -41,7 +41,7 @@ function Home() {
 
   return (
     <>
-      <Header />
+      <Header title="Discovery" />
       <ProductList>
         {products.map(product => (
           <ProductCard

@@ -38,7 +38,7 @@ function Cart() {
 
   return (
     <>
-      <Header />
+      <Header title="Shopping Cart" />
       <Container>
         <ProductTable>
           <thead>
