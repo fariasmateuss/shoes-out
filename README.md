@@ -27,16 +27,13 @@
 
 To run this project in the development mode, you'll need to have a basic environment with NodeJs and Yarn installed.
 
-
-#### JSON Server
-
-To start the API REST
+#### Cloning the Repository
 
 ```
-yarn json-server server.json  -p 3333 -w
+git clone https://github.com/fariasmateuss/shoes-out.git
 ```
 
-#### Front-End
+### Installing
 
 Run to install the dependencies;
 
@@ -44,15 +41,30 @@ Run to install the dependencies;
 yarn
 ```
 
-Now, run to start the project;
+To start the project;
 
 ```
 yarn start
 ```
 
-## Contribution
+#### JSON Server
 
-See the [contribution guide](./github/CONTRIBUTING.md) for more details on how to contribute to this project.
+To start the API REST
+
+```
+yarn dev
+```
+
+_or_
+
+```
+yarn json-server server.json  -p 3333 -w
+```
+
+## Feedback
+
+Feel free to send me feedback on [LinkedIn](https://www.linkedin.com/in/fariasmateuss/) or [file an issue](https://github.com/fariasmateuss/github-explorer/issuesnew).
+Feature requests are always welcome.
 
 # License
 
