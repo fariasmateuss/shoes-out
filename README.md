@@ -63,7 +63,7 @@ yarn json-server server.json  -p 3333 -w
 
 ## Feedback
 
-Feel free to send me feedback on [LinkedIn](https://www.linkedin.com/in/fariasmateuss/) or [file an issue](https://github.com/fariasmateuss/github-explorer/issuesnew).
+Feel free to send me feedback on [LinkedIn](https://www.linkedin.com/in/fariasmateuss/) or [file an issue](https://github.com/fariasmateuss/shoes-out/issues/new).
 Feature requests are always welcome.
 
 # License
