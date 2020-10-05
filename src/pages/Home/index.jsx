@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { formatPrice } from '../../util/format';
 import { MdAddShoppingCart } from 'react-icons/md';
-import { ProductList, ProductCard, CartAmount } from './styles';
+import { ProductList, ProductCard, CartAmount, Spinner } from './styles';
 import * as CartActions from '../../store/modules/cart/actions';
 import Header from '../../components/Header';
 import api from '../../services/api';
@@ -42,55 +42,63 @@ function Home() {
   return (
     <>
       <Header title="Discovery" />
-      <ProductList>
-        {products.map(product => (
-          <ProductCard
-            key={product.id}
-            className="container"
-            bgCircle={product.color}
-          >
-            <div className="card">
-              <div className="imgBx">
-                <img src={product.image} alt={product.title} />
+      {products.length > 0 ? (
+        <ProductList>
+          {products.map(product => (
+            <ProductCard
+              key={product.id}
+              className="container"
+              bgCircle={product.color}
+            >
+              <div className="card">
+                <div className="imgBx">
+                  <img src={product.image} alt={product.title} />
+                </div>
+                <div className="contentBx">
+                  <h2>{product.title}</h2>
+                  <div className="size">
+                    <h3>Size :</h3>
+                    <span>37</span>
+                    <span>38</span>
+                    <span>39</span>
+                    <span>40</span>
+                  </div>
+                  <div className="color">
+                    <h3>Color :</h3>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <div className="price">
+                    <h3>Price :</h3>
+                    <span>{product.priceFormatted}</span>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() => handleAddProduct(product.id)}
+                  >
+                    {amount[product.id] || 0 ? (
+                      <CartAmount>
+                        <MdAddShoppingCart size={1} />
+                        {amount[product.id]}
+                      </CartAmount>
+                    ) : (
+                      <CartAmount hidden></CartAmount>
+                    )}
+                    Buy Now
+                  </button>
+                </div>
               </div>
-              <div className="contentBx">
-                <h2>{product.title}</h2>
-                <div className="size">
-                  <h3>Size :</h3>
-                  <span>37</span>
-                  <span>38</span>
-                  <span>39</span>
-                  <span>40</span>
-                </div>
-                <div className="color">
-                  <h3>Color :</h3>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-                <div className="price">
-                  <h3>Price :</h3>
-                  <span>{product.priceFormatted}</span>
-                </div>
-                <button
-                  type="button"
-                  onClick={() => handleAddProduct(product.id)}
-                >
-                  {amount[product.id] || 0 ? (
-                    <CartAmount>
-                      <MdAddShoppingCart size={1} />
-                      {amount[product.id]}
-                    </CartAmount>
-                  ) : (
-                    <CartAmount hidden></CartAmount>
-                  )}
-                  Buy Now
-                </button>
-              </div>
-            </div>
-          </ProductCard>
-        ))}
-      </ProductList>
+            </ProductCard>
+          ))}
+        </ProductList>
+      ) : (
+        <Spinner>
+          <span></span>
+          <span></span>
+          <span></span>
+        </Spinner>
+      )}
     </>
   );
 }
