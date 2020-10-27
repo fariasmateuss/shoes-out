@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { formatPrice } from '../../util/format';
 import { MdAddShoppingCart } from 'react-icons/md';
+import { formatPrice } from '../../util/format';
 import { ProductList, ProductCard, CartAmount, Spinner } from './styles';
 import * as CartActions from '../../store/modules/cart/actions';
 import Header from '../../components/Header';
@@ -11,10 +11,10 @@ function Home() {
   const [products, setProducts] = useState([]);
 
   const amount = useSelector(state =>
-    state.cart.reduce((amount, product) => {
-      amount[product.id] = product.amount;
+    state.cart.reduce((sumAmount, product) => {
+      sumAmount[product.id] = product.amount;
 
-      return amount;
+      return sumAmount;
     }, {}),
   );
 
@@ -65,9 +65,9 @@ function Home() {
                   </div>
                   <div className="color">
                     <h3>Color :</h3>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <span />
+                    <span />
+                    <span />
                   </div>
                   <div className="price">
                     <h3>Price :</h3>
@@ -83,7 +83,7 @@ function Home() {
                         {amount[product.id]}
                       </CartAmount>
                     ) : (
-                      <CartAmount hidden></CartAmount>
+                      <CartAmount hidden />
                     )}
                     Buy Now
                   </button>
@@ -94,9 +94,9 @@ function Home() {
         </ProductList>
       ) : (
         <Spinner>
-          <span></span>
-          <span></span>
-          <span></span>
+          <span />
+          <span />
+          <span />
         </Spinner>
       )}
     </>
