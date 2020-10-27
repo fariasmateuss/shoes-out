@@ -3,14 +3,7 @@
     "browser": true,
     "es2020": true
   },
-  "extends": [
-    "plugin:react/recommended",
-    "airbnb",
-    "prettier",
-    "prettier/babel",
-    "prettier/react",
-    "prettier/standard"
-  ],
+  "extends": ["airbnb", "prettier", "plugin:prettier/recommended"],
   "parser": "babel-eslint",
   "parserOptions": {
     "ecmaFeatures": {
@@ -19,13 +12,10 @@
     "ecmaVersion": 11,
     "sourceType": "module"
   },
-  "plugins": ["react", "standard", "babel", "react-hooks"],
+  "plugins": ["react", "react-hooks", "prettier"],
   "rules": {
     "prettier/prettier": "error",
-    "react/jsx-filename-extension": [
-      "warn",
-      { "extionsions": [".jsx", ".js"] }
-    ],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "import/prefer-default-export": "off",
     "no-unused-vars": "off",
     "no-console": ["error", { "allow": ["tron"] }],
