@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 
 import 'react-toastify/dist/ReactToastify.css';
 
-import backgroundImage from '../assets/background.svg';
+import backgroundImage from '../assets/img/background.svg';
 
 export default createGlobalStyle`
 * {
