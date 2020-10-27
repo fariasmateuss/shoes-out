@@ -3,7 +3,13 @@
     "browser": true,
     "es2020": true
   },
-  "extends": ["airbnb", "prettier", "plugin:prettier/recommended"],
+  "extends": [
+    "airbnb",
+    "prettier",
+    "prettier/react",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended"
+  ],
   "parser": "babel-eslint",
   "parserOptions": {
     "ecmaFeatures": {
@@ -17,9 +23,10 @@
     "prettier/prettier": "error",
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "import/prefer-default-export": "off",
+    "react/prop-types": "off",
     "no-unused-vars": "off",
+    "no-param-reassign": "off",
     "no-console": ["error", { "allow": ["tron"] }],
-    "no-param-reassing": "off",
     "class-methods-use-this": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn"
