@@ -1,20 +1,20 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { formatPrice } from '../../util/format';
-import * as CartActions from '../../store/modules/cart/actions';
-import { Container, ProductTable, Total } from './styles';
-import Header from '../../components/Header';
 import {
   MdRemoveCircleOutline,
   MdAddCircleOutline,
   MdDelete,
 } from 'react-icons/md';
+import { formatPrice } from '../../util/format';
+import * as CartActions from '../../store/modules/cart/actions';
+import { Container, ProductTable, Total } from './styles';
+import Header from '../../components/Header';
 
 function Cart() {
   const total = useSelector(state =>
     formatPrice(
-      state.cart.reduce((total, product) => {
-        return total + product.price * product.amount;
+      state.cart.reduce((totalSum, product) => {
+        return totalSum + product.price * product.amount;
       }, 0),
     ),
   );
@@ -50,7 +50,7 @@ function Cart() {
           </thead>
           <tbody>
             {cart.map(product => (
-              <tr>
+              <tr key={product.id}>
                 <td>
                   <img src={product.image} alt={product.title} />
                 </td>

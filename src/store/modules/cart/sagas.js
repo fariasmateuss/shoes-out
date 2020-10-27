@@ -1,9 +1,8 @@
 import { call, select, put, all, takeLatest } from 'redux-saga/effects';
-
+import { toast } from 'react-toastify';
 import api from '../../../services/api';
 import { formatPrice } from '../../../util/format';
 import { addToCartSuccess, updateAmountSucess } from './actions';
-import { toast } from 'react-toastify';
 
 function* addToCart({ id }) {
   const productExists = yield select(state =>
