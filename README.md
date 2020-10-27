@@ -20,6 +20,9 @@
 - [Prettier](https://prettier.io/docs/en/cli.html) - An opinionated code formatter.
 - [ESlint](https://eslint.org) - ESLint statically analyzes your code to quickly find problems.
 
+## Hosting
+
+[![Deploy with Vercel](https://img.shields.io/badge/vercel%20-%23000000.svg?&style=for-the-badge&logo=vercel&logoColor=white)](https://shoes-out.vercel.app/)
 
 ## Development setup
 
