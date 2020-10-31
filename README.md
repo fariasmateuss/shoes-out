@@ -22,7 +22,11 @@
 
 ## Hosting
 
-[![Deploy with Vercel](https://img.shields.io/badge/vercel%20-%23000000.svg?&style=for-the-badge&logo=vercel&logoColor=white)](https://shoes-out.vercel.app/)
+<p>
+  <a aria-label="Vercel logo" href="https://shoes-out.vercel.app/">
+    <img src="https://img.shields.io/badge/Hosting%20%20Vercel-000000.svg?style=for-the-badge&logo=vercel&labelColor=000000&logoWidth=20">
+  </a>
+</p>
 
 ## Development setup
 
@@ -52,10 +56,12 @@ yarn start
 
 #### JSON Server
 
+In the file `src/services/api.js` change the address to `http://localhost:3333`.
+
 To start the API REST
 
 ```
-yarn dev
+yarn dev:server
 ```
 
 _or_
