@@ -70,6 +70,12 @@ _or_
 yarn json-server server.json  -p 3333 -w
 ```
 
+## Commit Message Format
+
+In this project I used the emoji guide for commit messages.
+
+[Commit Message Format](https://gist.github.com/fariasmateuss/c8b3a2e1b8ae7c3cda520d0ac6e9e237) inspired by [Gitmoji](https://gitmoji.carloscuesta.me/).
+
 ## Feedback
 
 Feel free to send me feedback on [LinkedIn](https://www.linkedin.com/in/fariasmateuss/) or [file an issue](https://github.com/fariasmateuss/shoes-out/issues/new).
