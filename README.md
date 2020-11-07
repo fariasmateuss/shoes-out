@@ -1,4 +1,8 @@
-<img src=".github/thumbnail.png" />
+<p>
+  <a aria-label="Hosting with Vercel" href="https://shoes-out.vercel.app/">
+    <img src=".github/thumbnail.png" />
+  </a>
+</p>
 
 <p align="center">
   Application built with ReactJs, Redux, Redux Saga, Styled Components and Restful API with JSON Server.
@@ -19,14 +23,6 @@
 - [JSON Server](https://github.com/typicode/json-server) - Fake REST API
 - [Prettier](https://prettier.io/docs/en/cli.html) - An opinionated code formatter.
 - [ESlint](https://eslint.org) - ESLint statically analyzes your code to quickly find problems.
-
-## Hosting
-
-<p>
-  <a aria-label="Vercel logo" href="https://shoes-out.vercel.app/">
-    <img src="https://img.shields.io/badge/Hosting%20%20Vercel-000000.svg?style=for-the-badge&logo=vercel&labelColor=000000&logoWidth=20">
-  </a>
-</p>
 
 ## Development setup
 
