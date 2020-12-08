@@ -4,7 +4,7 @@ import { darken } from 'polished';
 
 export const Container = styled.div`
   padding: 30px;
-  background: #232323;
+  background: ${({ theme }) => theme.colors['mine-shaft']};
   border-radius: 4px;
 
   footer {
@@ -14,7 +14,7 @@ export const Container = styled.div`
     align-items: center;
 
     button {
-      background: #131313;
+      background: ${({ theme }) => theme.colors['cod-gray']};
       border: 0;
       border-radius: 4px;
       padding: 12px 20px;
@@ -23,7 +23,7 @@ export const Container = styled.div`
       transition: background 0.2s;
 
       &:hover {
-        background: ${darken(0.03, '#131313')};
+        background: ${({ theme }) => darken(0.03, theme.colors['cod-gray'])};
       }
     }
   }
@@ -33,7 +33,7 @@ export const ProductTable = styled.table`
   width: 100%;
 
   thead th {
-    color: #999;
+    color: ${({ theme }) => theme.colors['dusty-gray']};
     text-align: left;
     padding: 12px;
 
@@ -59,7 +59,7 @@ export const ProductTable = styled.table`
   }
 
   strong {
-    color: #999;
+    color: ${({ theme }) => theme.colors['dusty-gray']};
     display: block;
   }
 
@@ -75,9 +75,9 @@ export const ProductTable = styled.table`
     align-items: center;
 
     input {
-      border: 1px solid #ddd;
+      border: 1px solid ${({ theme }) => theme.colors.alto};
       border-radius: 4px;
-      color: #666;
+      color: ${({ theme }) => theme.colors['dove-gray']};
       padding: 6px;
       width: 50px;
     }
@@ -95,7 +95,7 @@ export const Total = styled.div`
   align-items: baseline;
 
   span {
-    color: #999;
+    color: ${({ theme }) => theme.colors['dusty-gray']};
     font-weight: bold;
   }
 

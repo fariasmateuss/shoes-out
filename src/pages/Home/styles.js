@@ -23,7 +23,7 @@ export const ProductCard = styled.li`
     position: relative;
     width: 320px;
     height: 450px;
-    background: #232323;
+    background: ${({ theme }) => theme.colors['mine-shaft']};
     border-radius: 20px;
     overflow: hidden;
 
@@ -124,10 +124,10 @@ export const ProductCard = styled.li`
         line-height: 26px;
         font-size: 14px;
         display: inline-block;
-        background: #fff;
+        background: ${({ theme }) => theme.colors['primary-color']};
         margin: 0 5px;
         transition: 0.5s;
-        color: #111;
+        color: ${({ theme }) => theme.colors.gray};
         border-radius: 4px;
         cursor: pointer;
       }
@@ -135,7 +135,7 @@ export const ProductCard = styled.li`
       .color span {
         width: 20px;
         height: 20px;
-        background: #eee;
+        background: ${({ theme }) => theme.colors.gallery};
         border-radius: 50%;
         margin: 0 5px;
         cursor: pointer;
@@ -146,24 +146,24 @@ export const ProductCard = styled.li`
         }
 
         &:nth-child(2) {
-          background: #eab15b;
+          background: ${({ theme }) => theme.colors.porsche};
         }
 
         &:nth-child(3) {
-          background: #e91e63;
+          background: ${({ theme }) => theme.colors.amarantch};
         }
       }
 
       button {
         display: inline-block;
         padding: 10px 20px;
-        background: #fff;
+        background: ${({ theme }) => theme.colors['primary-color']};
         border-radius: 4px;
         border-style: none;
         margin-top: 10px;
         text-decoration: none;
         font-weight: 600;
-        color: #111;
+        color: ${({ theme }) => theme.colors.gray};
         opacity: 0;
         transform: translateY(50px);
         transition: 0.5s;
@@ -192,7 +192,7 @@ export const CartAmount = styled.div`
   padding: 3px 7px;
   left: -10px;
   top: -10px;
-  background-color: #f44336;
+  background-color: ${({ theme }) => theme.colors.cart};
   border-radius: 50px;
   font-size: 10px;
   font-weight: 700;
@@ -206,7 +206,7 @@ export const Spinner = styled.div`
   span {
     width: 18px;
     height: 18px;
-    background-color: #333;
+    background-color: ${({ theme }) => theme.colors.shaft};
     border-radius: 100%;
     display: inline-block;
     -webkit-animation: LoadingDelay 1.4s infinite ease-in-out both;

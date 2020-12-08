@@ -6,7 +6,7 @@ import backgroundImage from '../assets/img/background.svg';
 
 export default createGlobalStyle`
 * {
-  color: #fff;
+  color: ${({ theme }) => theme.colors['primary-color']};
   margin: 0;
   padding: 0;
   outline: 0;
@@ -19,7 +19,8 @@ a {
 }
 
 body {
-  background: #131313 url(${backgroundImage}) no-repeat center top;
+  background: ${({ theme }) =>
+    theme.colors['cod-gray']} url(${backgroundImage}) no-repeat center top;
   -webkit-font-smoothing: antialised;
 }
 

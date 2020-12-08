@@ -30,7 +30,7 @@ export const Cart = styled(Link)`
     right: 5px;
     top: -15px;
     display: inline-block;
-    background-color: #f44336;
+    background-color: ${({ theme }) => theme.colors.cart};
     border-radius: 50px;
     font-size: 11px;
     font-weight: 700;
