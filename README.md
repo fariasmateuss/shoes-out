@@ -1,7 +1,5 @@
-<p>
-  <a aria-label="Hosting with Vercel" href="https://shoes-out.vercel.app/">
-    <img src=".github/thumbnail.png" />
-  </a>
+<p align="center">
+    <img src="docs/resources/thumbnail.png" />
 </p>
 
 <p align="center">
