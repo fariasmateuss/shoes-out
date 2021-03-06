@@ -7,6 +7,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.21.1",
+    "dotenv": "^8.2.0",
     "immer": "^8.0.1",
     "parent-module": "^2.0.0",
     "polished": "^3.6.5",
