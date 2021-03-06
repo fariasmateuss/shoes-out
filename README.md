@@ -9,12 +9,12 @@
 ## Tech
 
 - [ReactJs](https://reactjs.org) - A JavaScript library for building user interfaces.
-  - [React Icons](https://styled-components.com/) - Utilizes ES6 imports that allows you to include only the icons that your project is using.
-  - [React Router Dom](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom) - DOM bindings.
-  - [React Redux](https://redux.js.org/basics/usage-with-react) - State container for JavaScript applications.
-  - [React Redux Saga](https://redux-saga.js.org/) - Library that aims to make application side effects.
-  - [React Toastify](https://github.com/fkhadra/react-toastify) - React notification.
-  - [React Reactotron](https://github.com/infinitered/reactotron) - A development tool to explore, inspect, and diagnosis your React DOM/JS apps.
+- [React Icons](https://styled-components.com/) - Utilizes ES6 imports that allows you to include only the icons that your project is using.
+- [React Router Dom](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom) - DOM bindings.
+- [React Redux](https://redux.js.org/basics/usage-with-react) - State container for JavaScript applications.
+- [React Redux Saga](https://redux-saga.js.org/) - Library that aims to make application side effects.
+- [React Toastify](https://github.com/fkhadra/react-toastify) - React notification.
+- [React Reactotron](https://github.com/infinitered/reactotron) - A development tool to explore, inspect, and diagnosis your React DOM/JS apps.
 - [Styled Components](https://eslint.org) - ES6 and CSS to styled components.
 - [Axios](https://github.com/axios/axios) - Promise based HTTP client for the browser and NodeJs.
 - [Immer](https://github.com/immerjs/immer) - Immutability the easy way.
@@ -48,11 +48,7 @@ To start the project;
 yarn start
 ```
 
-#### JSON Server
-
-In the file `src/services/api.js` change the address to `http://localhost:3333`.
-
-To start the API REST
+To start the JSON Server
 
 ```
 yarn dev:server
