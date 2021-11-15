@@ -6,6 +6,10 @@
   Application built with ReactJs, Redux, Redux Saga, Styled Components and Restful API with JSON Server.
 </p>
 
+## Demo
+
+[Link to demo](https://shoes-out.netlify.app/)
+
 ## Tech
 
 - [ReactJs](https://reactjs.org) - A JavaScript library for building user interfaces.
@@ -18,11 +22,9 @@
 - [Styled Components](https://eslint.org) - ES6 and CSS to styled components.
 - [Axios](https://github.com/axios/axios) - Promise based HTTP client for the browser and NodeJs.
 - [Immer](https://github.com/immerjs/immer) - Immutability the easy way.
-- [JSON Server](https://github.com/typicode/json-server) - Fake REST API
-- [Prettier](https://prettier.io/docs/en/cli.html) - An opinionated code formatter.
-- [ESlint](https://eslint.org) - ESLint statically analyzes your code to quickly find problems.
+- [JSON Server](https://github.com/typicode/json-server) - Fake REST API.
 
-## Development setup
+## Local development
 
 ### Prerequisites
 
@@ -36,19 +38,19 @@ git clone https://github.com/fariasmateuss/shoes-out.git
 
 ### Installing
 
-Run to install the dependencies;
+Run to install the dependencies:
 
 ```
 yarn
 ```
 
-To start the project;
+To start the project:
 
 ```
 yarn start
 ```
 
-To start the JSON Server
+To start the JSON Server:
 
 ```
 yarn dev:server
